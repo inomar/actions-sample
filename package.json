@@ -1,0 +1,17 @@
+{
+  "name": "github-action-sample",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/inomar/actions-sample.git",
+  "author": "Makoto Inomata <inomar1486@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@cybozu/eslint-config": "^11.0.3",
+    "eslint": "^7.18.0",
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.1"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha"
+  }
+}
