@@ -1,0 +1,13 @@
+name: Pushing to develop
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  echo:
+    name: Echo branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo
+        run: echo ${GITHUB_RUN_ID}
