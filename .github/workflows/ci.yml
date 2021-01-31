@@ -30,3 +30,17 @@ jobs:
         run: yarn
       - name: Lint
         run: yarn lint
+        timeout-minutes: 30
+  sample:
+    name: sample
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.4
+      - name: Set ENV
+        env:
+          NAME: 'SAMPLE'
+        run: |
+          echo ${NAME}
+          echo ${HOME}
+          echo ${GITHUB_REPOSITORY}
